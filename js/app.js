@@ -20,9 +20,9 @@
 
     if (!todoForm || !todoList) return;
 
-    let currentFilter = 'all'; // 'all', 'active', 'done'
+    let currentFilter = 'all'; 
 
-    // Helper: Update counter text
+    //Update counter text
     function updateCounter() {
       const items = todoList.querySelectorAll('li');
       let activeCount = 0;
@@ -36,7 +36,7 @@
       }
     }
 
-    // Helper: Apply current filter visibility (handles both display style and hidden class)
+    //Apply current filter visibility
     function applyFilter() {
       const items = todoList.querySelectorAll('li');
       items.forEach(li => {
@@ -83,7 +83,7 @@
         errorMsg.style.display = 'none';
       }
 
-      // Create new <li> element
+      // Create new element
       const li = document.createElement('li');
       
       const span = document.createElement('span');
